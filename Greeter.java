@@ -17,6 +17,7 @@ public class Greeter {
   }
 
   public static void main(String[] args) {
+    if(args.length<2) throw new IllegalArgumentException("Wrong number of arguments");
     String language = args[0];
     String country = args[1];
     String name = args[2];
